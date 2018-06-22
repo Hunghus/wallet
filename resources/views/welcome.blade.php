@@ -1,95 +1,148 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html class="no-js" lang="{{ app()->getLocale() }}">
     <head>
+
+        <!--- basic page needs
+        ================================================== -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WalletChainos</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- mobile specific metas
+        ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="{{URL::asset("css/base.css")}}">
+        <link rel="stylesheet" href="{{URL::asset("css/vendor.css")}}">
+        <link rel="stylesheet" href="{{URL::asset("css/main.css")}}">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- script
+        ================================================== -->
+        <script src="js/modernizr.js"></script>
+        <script src="js/pace.min.js"></script>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+        <!-- favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+    <body id="top">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div> <!-- end header-logo -->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Transcend Studio</h3>
+
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+
+                <p>
+                    Sau khi điều chỉnh giảm, giá xăng E5 RON92 không cao hơn 19.611 đồng/lít; Xăng RON95-III không cao hơn 21.177 đồng/lít; Dầu diesel 0.05S không cao hơn 17.460 đồng/lít
+                </p>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+                <h1>
+                    Hello folks, we are <br>
+                    Team Chainos
+                </h1>
+
+                <p>
+                    We create stunning digital wallet <br>
+                    That will help the electronic money management.
+                </p>
+            </div> <!-- end home-content__main -->
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-sidelinks">
+            <li><a class="smoothscroll" href="#about">About<span>who we are</span></a></li>
+            <li><a class="smoothscroll" href="#services">Services<span>what we do</span></a></li>
+            <li><a  class="smoothscroll" href="#contact">Contact<span>get in touch</span></a></li>
+        </ul> <!-- end home-sidelinks -->
+
+        <ul class="home-social">
+            <li class="home-social-title">Follow Us</li>
+            <li><a href="#0">
+                    <i class="fab fa-facebook"></i>
+                    <span class="home-social-text">Facebook</span>
+                </a></li>
+            <li><a href="#0">
+                    <i class="fab fa-twitter"></i>
+                    <span class="home-social-text">Twitter</span>
+                </a></li>
+            <li><a href="#0">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="home-social-text">LinkedIn</span>
+                </a></li>
+        </ul> <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
     </body>
 </html>
